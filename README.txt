@@ -10,3 +10,15 @@ Future Improvements:
 
 Changes:
 Rebuilt project in Visual Studio 2013 with .NET Framework 4.5
+
+
+
+
+
+
+
+
+
+NuGet was having some problems on my end installing the project (Visual Studio 2013). After running these two commands at the command line the problem went away. I'm gonna put these here in case I need to refer back to them.
+reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
+reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
